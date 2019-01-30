@@ -1,3 +1,16 @@
+@import '~@angular/material/theming';
+@mixin navtabs-component($theahotel-theme) {
+
+
+  $primay : map-get($theahotel-theme, $theahotel-primary);
+  $accent : map-get($theahotel-theme, $theahotel-accent);
+
+  .navtabs-container {
+    background-color: mat-color($theahotel-primary, 500);
+  }
+
+}
+
 .toolbar-flex {
   flex: 1 0.5 auto;
 }
